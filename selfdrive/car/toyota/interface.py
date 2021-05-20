@@ -217,7 +217,7 @@ class CarInterface(CarInterfaceBase):
       stop_and_go = True
       ret.safetyParam = 73
       ret.wheelbase = 2.68986
-      ret.steerRatio = 14.5
+      ret.steerRatio = 14.3
       tire_stiffness_factor = 0.7933
       ret.mass = 3370. * CV.LB_TO_KG + STD_CARGO_KG
       ret.longitudinalTuning.deadzoneBP = [0., 8.05]
@@ -264,7 +264,7 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.RAV4H_TSS2:
       stop_and_go = True
       ret.safetyParam = 73
-      ret.steerRatio = 14.5
+      ret.steerRatio = 14.3
       ret.wheelbase = 2.68986
       tire_stiffness_factor = 0.7933
       ret.mass = 3800. * CV.LB_TO_KG + STD_CARGO_KG
