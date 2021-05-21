@@ -299,7 +299,7 @@ class CarInterface(CarInterfaceBase):
             ret.lateralTuning.pid.kiBP = [8, 23, 23.01, 32]
             ret.lateralTuning.pid.kfBP = [0, 22, 40]
             ret.lateralTuning.pid.kpV = [0.6, 0.6, 0.3, 0.3] # power or torque
-            ret.lateralTuning.pid.kiV = [0.19, 0.19, 0.02, 0.02] # trajectory variance
+            ret.lateralTuning.pid.kiV = [0.185, 0.185, 0.01, 0.01] # trajectory variance
             ret.lateralTuning.pid.kfV = [0.00007818594, 0.00007818594, 0.00004] # curvature
             #ret.lateralTuning.pid.kpBP = [0, 23.6, 23.61, 40]
             #ret.lateralTuning.pid.kiBP = [0, 23.6, 23.61, 40]
@@ -330,12 +330,12 @@ class CarInterface(CarInterfaceBase):
         ret.lateralTuning.indi.actuatorEffectivenessV = [9, 12, 15]
         ret.steerActuatorDelay = 0.42
       else:
-        ret.lateralTuning.pid.kpBP = [0, 23, 23.01, 40]
-        ret.lateralTuning.pid.kiBP = [0, 23, 23.01, 40]
-        ret.lateralTuning.pid.kfBP = [0, 23, 40]
-        ret.lateralTuning.pid.kpV = [0.6, 0.6, 0.6, 0.6] # power or torque
-        ret.lateralTuning.pid.kiV = [0.51, 0.51, 0.2, 0.1] # trajectory variance
-        ret.lateralTuning.pid.kfV = [0.000306527623515, 0.000306527623515, 0.00007818594] # curvature
+        ret.lateralTuning.pid.kpBP = [8, 23, 23.01, 32]
+        ret.lateralTuning.pid.kiBP = [8, 23, 23.01, 32]
+        ret.lateralTuning.pid.kfBP = [0, 22, 40]
+        ret.lateralTuning.pid.kpV = [0.6, 0.6, 0.3, 0.3] # power or torque
+        ret.lateralTuning.pid.kiV = [0.185, 0.185, 0.01, 0.01] # trajectory variance
+        ret.lateralTuning.pid.kfV = [0.00007818594, 0.00007818594, 0.00004] # curvature
 
     elif candidate in [CAR.LEXUS_ES_TSS2, CAR.LEXUS_ESH_TSS2]:
       stop_and_go = True
