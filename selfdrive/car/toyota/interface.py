@@ -225,7 +225,7 @@ class CarInterface(CarInterfaceBase):
       ret.longitudinalTuning.kpBP = [0., 5., 20.]
       ret.longitudinalTuning.kpV = [1.2, 0.99, 0.77]
       ret.longitudinalTuning.kiBP = [0., 5., 12., 20., 27.]
-      ret.longitudinalTuning.kiV = [.2, .26, .2, .18, .12]
+      ret.longitudinalTuning.kiV = [.2, .2, .2, .18, .12]
       ret.stoppingBrakeRate = 0.09 # reach stopping target smoothly
       ret.startingBrakeRate = 1.0 # release brakes fast
       ret.startAccel = 1.50 # Accelerate from 0 faster
@@ -251,7 +251,7 @@ class CarInterface(CarInterfaceBase):
             ret.lateralTuning.pid.kiBP = [8, 23, 23.01, 32, 36]
             ret.lateralTuning.pid.kfBP = [0, 25, 33, 40]
             ret.lateralTuning.pid.kpV = [0.6, 0.6, 0.6, 0.6, 0.6] # power or torque
-            ret.lateralTuning.pid.kiV = [0.184, 0.184, 0.01, 0.01, 0.005] # trajectory variance
+            ret.lateralTuning.pid.kiV = [0.185, 0.185, 0.01, 0.01, 0.005] # trajectory variance
             ret.lateralTuning.pid.kfV = [0.00031415926535897932384626433832795, 0.00031415926535897932384626433832795, 0.00007818594, 0.00004] # curvature
             #ret.lateralTuning.pid.kpBP = [0, 23.6, 23.61, 40]
             #ret.lateralTuning.pid.kiBP = [0, 23.6, 23.61, 40]
