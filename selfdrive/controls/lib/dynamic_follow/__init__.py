@@ -14,9 +14,9 @@ travis = False
 
 # dp
 PROFILE_AUTO = 4
-PROFILE_LONG = 3
+PROFILE_FAR = 3
 PROFILE_NORMAL = 2
-PROFILE_SHORT = 1
+PROFILE_CLOSE = 1
 PROFILE_OFF = 0
 
 class DynamicFollow:
@@ -248,11 +248,11 @@ class DynamicFollow:
     else:
       df_profile = self.dp_dynamic_follow
 
-    if df_profile == PROFILE_LONG:
+    if df_profile == PROFILE_FAR:
       y_dist = [1.45, 1.48, 1.6, 1.651, 1.698, 1.748, 1.792, 1.833, 1.876, 1.92, 2.03, 2.1, 2.19, 2.3, 2.43, 2.6]
       profile_mod_pos = [0.26, 0.28, 0.3, 0.13, 0.1]
       profile_mod_neg = [0.6, 0.6, 1.0, 1.1, 1.2]
-    elif df_profile == PROFILE_SHORT:  # for in congested traffic
+    elif df_profile == PROFILE_CLOSE:  # for in congested traffic
       x_vel = [0.0, 1, 2.78, 5.56, 8.33, 11.11, 13.89, 16.67, 19.44, 22.22, 27.78, 30.56, 33.33, 36.11, 38.89, 41.67] 
       # in kph[0,  .36, 1.1,  4, 10,    20,     30,    40,       50,        60,       70,       80,       90,       100,     110,     120,     130,    140]
       y_dist = [1.255, 1.26, 1.27, 1.28, 1.285, 1.29, 1.295, 1.28, 1.26, 1.26, 1.295, 1.33, 1.4, 1.5, 1.62, 1.8]
